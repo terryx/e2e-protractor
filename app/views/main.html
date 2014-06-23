@@ -1,0 +1,27 @@
+<div class="header">
+    <h3 class="text-muted">e2e protractor</h3>
+</div>
+
+
+<div ng-controller="LoginCtrl" class="panel panel-default">
+    <div class="panel-heading"><h3 class="panel-title"><strong>Sign in </strong></h3></div>
+    <div class="panel-body">
+        <form id="loginForm" role="form" ng-submit="login()">
+            <div class="form-group">
+                <label>Username or Email</label>
+                <input type="email" ng-model="form.email" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label>Password <a href="/sessions/forgot_password">(forgot password)</a></label>
+                <input type="password" ng-model="form.password" class="form-control"
+                       placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+</div>
